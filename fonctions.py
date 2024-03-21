@@ -56,5 +56,13 @@ def comparer_nombre(nombre1, nombre2):
 print(comparer_nombre(15, 15))
 """
 
+"""
+fonction simple
+
+
+bonjour = lambda:print("Bonjour !")
+
+bonjour()
+"""
 
 
