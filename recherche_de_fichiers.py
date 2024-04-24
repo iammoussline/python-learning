@@ -2,7 +2,6 @@ import os
 import sys
 
 def rechercher_fichiers(repertoire, extension):
-    """Recherche des fichiers dans un répertoire et ses sous-répertoires."""
     fichiers_trouves = []
     for dossier, sous_dossiers, fichiers in os.walk(repertoire):
         for fichier in fichiers:
@@ -11,7 +10,6 @@ def rechercher_fichiers(repertoire, extension):
                 fichiers_trouves.append(chemin_fichier)
     return fichiers_trouves
 
-# Vérifier si l'utilisateur a fourni l'extension du fichier en argument
 if len(sys.argv) < 3:
     print("Usage: python recherche_fichiers.py <répertoire> <extension>")
     sys.exit(1)
